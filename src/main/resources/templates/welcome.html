@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <p>welcome to my webside </p>
+
+  <div  th:object="${user}">
+
+
+    <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" th:field="*{name}"id="Name" required>
+
+
+      <label for="Surname"><b>Surname</b></label>
+      <input type="text" placeholder="Enter Surname" name="surname" th:field="*{surname}"id="Surname" required>
+
+
+
+  </div>
+   <a href="/logout">logout</a>
+</body>
+</html>
